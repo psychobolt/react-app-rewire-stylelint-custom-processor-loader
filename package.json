@@ -1,0 +1,19 @@
+{
+  "name": "react-app-rewire-plugin-boilerplate",
+  "version": "0.1.0",
+  "description": "The essential boilerplate for creating react-app-rewired plugins",
+  "main": "dist/index.js",
+  "repository": "https://github.com/psychobolt/react-app-rewire-plugin-boilerplate",
+  "author": "psychobolt",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "codecov": "codecov"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "jest": "^22.4.3",
+    "json-import-loader": "^1.1.1"
+  }
+}
