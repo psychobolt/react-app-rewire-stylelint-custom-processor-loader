@@ -1,0 +1,16 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "description": "Dummy react app",
+  "main": "src/index.js",
+  "author": "psychobolt",
+  "license": "MIT",
+  "scripts": {
+    "build": "react-app-rewired build"
+  },
+  "devDependencies": {
+    "json-beautify": "^1.0.1",
+    "react-app-rewired": "^1.5.0",
+    "react-scripts": "^1.1.4"
+  }
+}
