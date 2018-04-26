@@ -12,6 +12,12 @@
     "test": "jest",
     "codecov": "codecov"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/utils.js"
+    ]
+  },
   "devDependencies": {
     "codecov": "^3.0.0",
     "jest": "^22.4.3",
