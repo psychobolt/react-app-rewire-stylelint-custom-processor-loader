@@ -5,6 +5,7 @@ cache:
   directories:
     - node_modules
 script:
+  - cd react-app && yarn install && yarn build
   - npm test -- --coverage
 after_script:
   - npm run codecov

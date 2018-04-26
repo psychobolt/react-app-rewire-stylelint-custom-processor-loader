@@ -12,7 +12,7 @@ The essential boilerplate for creating react-app-rewired plugins
 
 ## Included
 
-- Empty CRA project with [react-app-rewired](https://github.com/timarney/react-app-rewired)
+- Empty CRA project with [react-app-rewired](https://github.com/timarney/react-app-rewired) v1.x and [react-scripts](https://www.npmjs.com/package/react-scripts) v1.x
 - JavaScript unit test runner [Jest](https://facebook.github.io/jest/)
 - Webpack config parse [utils](src/utils.js)
 - Code coverage reporter [Codecov](https://codecov.io/)
@@ -20,7 +20,10 @@ The essential boilerplate for creating react-app-rewired plugins
 
 ## Setup
 
-Install the latest [Node JS LTS](https://nodejs.org/) and [Yarn](https://yarnpkg.com) and simply run ```yarn``` or ```yarn install``` command in the root and react-app directory.
+1. Install the latest [Node JS LTS](https://nodejs.org/) and [Yarn](https://yarnpkg.com) and simply run ```yarn``` or ```yarn install``` command in the root and react-app directory.
+2. Generate webpack test config with ```cd react-app/``` and ```yarn build```.
+
+> Note: You should generate a new webpack test config whenver you upgrade react-scripts from react-app.
 
 ## Test Driven Development
 

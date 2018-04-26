@@ -58,5 +58,9 @@ typings/
 .env
 
 # output
+webpack.config.json
 dist
 react-app/build
+
+# MacOS
+.DS_Store
