@@ -24,8 +24,8 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
 /**
  * Given a rule, return if it uses a specific loader.
  */
-const createLoaderMatcher = loader => rule =>
-  rule.loader && rule.loader.indexOf(`${path.sep}${loader}${path.sep}`) !== -1
+const createLoaderMatcher = (loader, sep = path.sep) => rule =>
+  rule.loader && rule.loader.indexOf(`${sep}${loader}${sep}`) !== -1
 
 /**
 * Add one rule before another in the list of rules.
