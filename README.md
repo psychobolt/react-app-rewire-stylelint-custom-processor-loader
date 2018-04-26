@@ -16,6 +16,7 @@ The essential boilerplate for creating react-app-rewired plugins
 - JavaScript unit test runner [Jest](https://facebook.github.io/jest/)
 - Webpack config parse [utils](src/utils.js)
 - Code coverage reporter [Codecov](https://codecov.io/)
+- [VS Code](https://code.visualstudio.com) debugger configs
 
 ## Setup
 
@@ -23,4 +24,4 @@ Install the latest [Node JS LTS](https://nodejs.org/) and [Yarn](https://yarnpkg
 
 ## Test Driven Development
 
-Make any changes to src/index.js and watch tests using ```yarn test --watch [--coverage]```.
+Make any changes to src/index.js and ```yarn start``` to watch tests with coverage.

@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "npm run test -- --coverage --watch",
     "test": "jest",
     "codecov": "codecov"
   },
