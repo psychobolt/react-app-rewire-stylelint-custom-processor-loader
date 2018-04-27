@@ -1,8 +1,8 @@
 {
-  "name": "react-app-rewire-plugin-boilerplate",
+  "name": "react-app-rewire-stylelint-custom-processor-loader",
   "version": "0.1.0",
-  "description": "The essential boilerplate for creating react-app-rewired plugins",
-  "main": "dist/index.js",
+  "description": "Configure CRA project to stylelint with stylelint-custom-processor-loader",
+  "main": "src/index.js",
   "repository": "https://github.com/psychobolt/react-app-rewire-plugin-boilerplate",
   "author": "psychobolt",
   "license": "MIT",
