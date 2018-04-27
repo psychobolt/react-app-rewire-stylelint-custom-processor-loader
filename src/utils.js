@@ -24,8 +24,8 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
 /**
  * Given a rule, return if it uses a specific loader.
  */
-const createLoaderMatcher = (loader, sep = path.sep) => rule =>
-  rule.loader && rule.loader.indexOf(`${sep}${loader}${sep}`) !== -1
+const createLoaderMatcher = loader => rule =>
+  rule.loader && rule.loader.indexOf(`${path.sep}${loader}${path.sep}`) !== -1
 
 /**
 * Add one rule before another in the list of rules.
@@ -35,9 +35,18 @@ const addBeforeRule = (rulesSource, ruleMatcher, value) => {
   rules.splice(index, 0, value)
 }
 
+/**
+ * Add one rule after another in the list of rules.
+ */
+const addAfterRule = (rulesSource, ruleMatcher, value) => {
+  const {index, rules} = findIndexAndRules(rulesSource, ruleMatcher)
+  rules.splice(index + 1, 0, value)
+}
+
 module.exports = {
   ruleChildren,
   findIndexAndRules,
   createLoaderMatcher,
-  addBeforeRule
+  addBeforeRule,
+  addAfterRule
 };
